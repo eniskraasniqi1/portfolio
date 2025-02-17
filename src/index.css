@@ -1,5 +1,12 @@
+@import "tailwindcss";
+
 html,
 body {
   height: 100vh;
   width: 100%;
+}
+
+
+/* Define theme config, colors in here. v4 */
+@theme {
 }
