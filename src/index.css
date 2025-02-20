@@ -2,6 +2,7 @@
 
 /* Define theme config, colors in here. v4 */
 @theme {
+  --color-foreground: #000;
 }
 
 html,
