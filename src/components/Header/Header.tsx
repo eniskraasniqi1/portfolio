@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import GithubIcon from "../../icons/GithubIcon";
+import { useLocation } from "react-router";
 
 interface NavigationLink {
   name: ReactNode;
@@ -14,6 +15,8 @@ const navigationLinks: NavigationLink[] = [
 ];
 
 const Header = () => {
+  const { pathname } = useLocation();
+
   return (
     <header className="py-4 top-6 z-10 flex justify-center duration-500 ease-in-out transition-transform">
       <nav>
@@ -21,7 +24,12 @@ const Header = () => {
           {navigationLinks.map((link, idx) => {
             return (
               <li key={idx}>
-                <a className="block px-3 hover:text-cyan-700" href={link.href}>
+                <a
+                  className={`block px-3 hover:text-cyan-700 ${
+                    pathname === link.href ? "text-cyan-700" : ""
+                  }`}
+                  href={link.href}
+                >
                   {link.name}
                   <span className="absolute inset-x-1 -bottom-px h-px bg-linear-to-r from-cyan-700/0 via-cyan-700/40 to-cyan-700/0"></span>
                 </a>
