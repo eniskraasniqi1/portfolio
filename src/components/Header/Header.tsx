@@ -31,7 +31,6 @@ const Header = () => {
                   href={link.href}
                 >
                   {link.name}
-                  <span className="absolute inset-x-1 -bottom-px h-px bg-linear-to-r from-cyan-700/0 via-cyan-700/40 to-cyan-700/0"></span>
                 </a>
               </li>
             );
