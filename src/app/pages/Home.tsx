@@ -1,5 +1,4 @@
-import GithubIcon from "../../icons/GithubIcon";
-import LinkedinIcon from "../../icons/LinkedinIcon";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 
 const Home = () => {
   return (
@@ -25,7 +24,7 @@ const Home = () => {
           rel="noopener noreferrer"
           target="_blank"
         >
-          <GithubIcon />
+          <SiGithub />
           <span className="hidden sm:inline">Github</span>
         </a>
         <a
@@ -36,7 +35,7 @@ const Home = () => {
           rel="noopener noreferrer"
           target="_blank"
         >
-          <LinkedinIcon />
+          <SiLinkedin />
           <span className="hidden sm:inline">Linkedin</span>
         </a>
       </div>

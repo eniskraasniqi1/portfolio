@@ -1,17 +1,24 @@
 import { ReactNode } from "react";
-import GithubIcon from "../../icons/GithubIcon";
+import { SiGithub } from "react-icons/si";
 import { useLocation } from "react-router";
 
 interface NavigationLink {
   name: ReactNode;
   href: string;
+  rel?: string;
+  target?: string;
 }
 
 const navigationLinks: NavigationLink[] = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "My Stack", href: "/stack" },
-  { name: <GithubIcon />, href: "/github" },
+  {
+    name: <SiGithub size={20} />,
+    href: "https://github.com/eniskraasniqi1",
+    target: "_blank",
+    rel: "noopener noreferrer",
+  },
 ];
 
 const Header = () => {
@@ -29,6 +36,8 @@ const Header = () => {
                     pathname === link.href ? "text-cyan-700" : ""
                   }`}
                   href={link.href}
+                  target={link.target}
+                  rel={link.rel}
                 >
                   {link.name}
                 </a>
