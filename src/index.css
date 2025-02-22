@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+/* Define theme config, colors in here. v4 */
+@theme {
+  --color-foreground: #000;
+  --color-tags: #424242;
+  --color-linkedin: #004182;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-zinc-50);
+  color: var(--color-foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
