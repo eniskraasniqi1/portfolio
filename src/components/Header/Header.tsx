@@ -11,8 +11,7 @@ interface NavigationLink {
 
 const navigationLinks: NavigationLink[] = [
   { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "My Stack", href: "/stack" },
+  { name: "Tech Stack", href: "/stack" },
   {
     name: <SiGithub size={20} />,
     href: "https://github.com/eniskraasniqi1",

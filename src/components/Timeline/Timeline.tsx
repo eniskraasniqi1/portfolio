@@ -20,7 +20,7 @@ const timelineData: TimelineItem[] = [
     title: "Full-Stack Developer",
     subtitle: "StarLabs",
     description:
-      "Developed the Gildform product, an ERP system management tool seamlessly integrated with Shopify. Additionally, contributed to building Gatsby themes, websites, and React widgets, implementing SEO best practices to enhance performance and user experience.",
+      "Helped delivering a product named Gildform, an ERP system management tool seamlessly integrated with Shopify. Additionally, contributed to building Gatsby themes, websites, and React widgets, implementing SEO best practices to enhance performance and user experience.",
   },
 ];
 
@@ -32,12 +32,12 @@ const Timeline: React.FC = () => {
           <div key={index} className="mb-10">
             {/* Diamond Shape */}
             <div className="absolute -left-[27px] w-5 h-5 bg-white z-10 box-content p-4">
-              <div className="w-full h-full bg-tags rotate-45"></div>
+              <div className="w-full h-full bg-tags hover:bg-black hover:cursor-pointer rotate-45"></div>
             </div>
 
             {/* Year Box */}
             <div className="pt-3">
-              <div className="bg-tags text-white px-3 py-1 text-sm font-semibold inline-block mb-2 rounded">
+              <div className="bg-tags hover:bg-black hover:cursor-pointer text-white px-3 py-1 text-sm font-semibold inline-block mb-2 rounded">
                 {item.year}
               </div>
 
