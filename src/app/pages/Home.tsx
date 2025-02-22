@@ -3,13 +3,13 @@ import { SiGithub, SiLinkedin } from "react-icons/si";
 const Home = () => {
   return (
     <div className="mt-8 lg:mt-16">
-      <h1 className="font-display text-3xl font-extrabold tracking-tight text-zinc-800 lg:text-4xl dark:text-zinc-100">
+      <h1 className="font-display text-3xl font-extrabold tracking-tight text-zinc-800 lg:text-4xl">
         👋 Hi, I am Enis Krasniqi!
       </h1>
 
-      <div className="my-4 border-t border-zinc-100 dark:border-zinc-800"></div>
+      <div className="my-4 border-t border-zinc-100"></div>
 
-      <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400 max-w-3xl">
+      <p className="mt-4 text-lg text-zinc-600 max-w-3xl">
         A 25-year-old Web Developer based in Pristina, Kosovo, with over 4 years
         of specialized front-end experience. Passionate about learning and
         delivering next-generation user products and interfaces.
@@ -40,7 +40,7 @@ const Home = () => {
         </a>
       </div>
 
-      <div className="my-10 border-t border-zinc-100 dark:border-zinc-800"></div>
+      <div className="my-10 border-t border-zinc-100"></div>
     </div>
   );
 };
