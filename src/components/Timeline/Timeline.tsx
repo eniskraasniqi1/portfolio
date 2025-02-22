@@ -20,7 +20,7 @@ const timelineData: TimelineItem[] = [
     title: "Full-Stack Developer",
     subtitle: "StarLabs",
     description:
-      "Developed the Gildform product, an ERP system management tool seamlessly integrated with Shopify. Additionally, contributed to building Gatsby themes, websites, and React widgets, implementing SEO best practices to enhance performance and user experience.",
+      "Helped delivering a product named Gildform, an ERP system management tool seamlessly integrated with Shopify. Additionally, contributed to building Gatsby themes, websites, and React widgets, implementing SEO best practices to enhance performance and user experience.",
   },
 ];
 
