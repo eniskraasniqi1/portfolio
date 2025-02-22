@@ -1,13 +1,15 @@
+import Timeline from "../../components/Timeline";
+
 const About = () => {
   return (
     <div className="mt-8 lg:mt-16">
-      <h1 className="font-display text-3xl font-extrabold tracking-tight text-zinc-800 lg:text-4xl dark:text-zinc-100">
+      <h1 className="font-display text-3xl font-extrabold tracking-tight text-zinc-800 lg:text-4xl">
         About
       </h1>
 
-      <div className="my-4 border-t border-zinc-100 dark:border-zinc-800"></div>
+      <div className="my-4 border-t border-zinc-100"></div>
 
-      <div className="mt-6 text-lg text-zinc-600 dark:text-zinc-400 max-w-3xl">
+      <div className="mt-6 text-lg text-zinc-600 max-w-3xl">
         <p>
           Hello! I am <strong>Enis Krasniqi</strong>, currently working as a
           <strong> frontend developer</strong> remotely from Pristina, Kosovo.
@@ -31,34 +33,9 @@ const About = () => {
           Experience
         </h2>
 
-        <div className="my-4 border-t border-zinc-100 dark:border-zinc-800"></div>
+        <div className="my-4 mb-8 border-t border-zinc-100"></div>
 
-        <ul className="mt-4 flex flex-col gap-2">
-          <li>
-            <strong>May 2022 - Present</strong> | Frontend developer at{" "}
-            <a
-              className="inline-flex items-center outline-none transition-colors font-semibold text-foreground hover:underline decoration-primary underline-offset-4"
-              href="https://www.teamleader.eu/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Teamleader
-            </a>
-            .
-          </li>
-          <li>
-            <strong>Aug 2020 - Apr 2022</strong> | Full stack developer at{" "}
-            <a
-              className="inline-flex items-center outline-none transition-colors font-semibold text-foreground hover:underline decoration-primary underline-offset-4"
-              href="https://www.starlabs.dev/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              StarLabs
-            </a>
-            .
-          </li>
-        </ul>
+        <Timeline />
       </div>
     </div>
   );
