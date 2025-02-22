@@ -3,6 +3,7 @@
 /* Define theme config, colors in here. v4 */
 @theme {
   --color-foreground: #000;
+  --color-tags: #424242;
   --color-linkedin: #004182;
 }
 
