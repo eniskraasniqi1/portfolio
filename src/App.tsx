@@ -1,9 +1,21 @@
-function App() {
-  return (
-    <div className="bg-testte px-4 py-2 rounded-xl border-1">
-      Click Me
-    </div>
-  );
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router";
+
+import AppRoutes from "./app/Routes";
+import Layout from "./components/Layout/Layout";
+
+import "./index.css";
+
+const root = document.getElementById("root");
+
+if (!root) {
+  throw new Error("Root element not found");
 }
 
-export default App;
+ReactDOM.createRoot(root).render(
+  <BrowserRouter>
+    <Layout>
+      <AppRoutes />
+    </Layout>
+  </BrowserRouter>
+);
