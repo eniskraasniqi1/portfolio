@@ -24,19 +24,21 @@ const Header = () => {
   const { pathname } = useLocation();
 
   return (
-    <header className="py-4 top-6 z-10 flex justify-center duration-500 ease-in-out transition-transform">
-      <nav>
-        <ul className="flex items-center rounded-full bg-white/90 px-3 py-3 text-sm font-medium text-zinc-800 ring-2 shadow-lg shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm">
+    <header className="py-6 lg:py-8 z-10 flex justify-center">
+      <nav role="navigation" aria-label="Main navigation">
+        <ul className="flex items-center rounded-full bg-white/95 px-4 py-3 text-sm font-medium text-zinc-700 ring-1 shadow-lg shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur">
           {navigationLinks.map((link, idx) => {
+            const isActive = pathname === link.href;
             return (
               <li key={idx}>
                 <a
-                  className={`block px-3 hover:text-cyan-700 ${
-                    pathname === link.href ? "text-cyan-700" : ""
+                  className={`block px-4 py-1 rounded-full transition-colors duration-200 ease-in-out hover:text-zinc-900 ${
+                    isActive ? "text-zinc-900 font-semibold" : ""
                   }`}
                   href={link.href}
                   target={link.target}
                   rel={link.rel}
+                  aria-current={isActive ? "page" : undefined}
                 >
                   {link.name}
                 </a>

@@ -2,24 +2,26 @@ import { TechStackList } from "../../constants/techStack";
 
 const TechStack = ({ list }: { list: TechStackList }) => {
   return (
-    <div>
-      <div className="text-white grid grid-cols-5 gap-5 max-md:grid-cols-4 max-sm:grid-cols-3 max-[500px]:grid-cols-2">
+    <div className="mt-6">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 lg:gap-5">
         {list.map((tech) => {
           const IconComponent = tech.icon;
 
           return (
-            <button
+            <div
               key={tech.name}
-              type="button"
-              className="flex flex-col items-center justify-center bg-zinc-50 text-zinc-800 ring-2 shadow-lg shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm gap-1.5 h-24 rounded-lg p-3 transition-all ease-in-out group cursor-pointer"
+              className="flex flex-col items-center justify-center bg-white text-zinc-800 ring-1 shadow-md hover:shadow-lg shadow-zinc-800/5 ring-zinc-200 gap-2 h-28 rounded-xl p-4 transition-all duration-300 ease-out group cursor-pointer hover:scale-105"
+              role="article"
+              aria-label={`${tech.name} technology`}
             >
               <IconComponent
-                className="transition-transform duration-300 group-hover:-translate-y-1"
-                size={32}
+                className="transition-all duration-300 group-hover:-translate-y-1 group-hover:scale-110"
+                size={36}
                 color={tech.color}
+                aria-hidden="true"
               />
-              <p>{tech.name}</p>
-            </button>
+              <p className="text-sm font-medium text-center">{tech.name}</p>
+            </div>
           );
         })}
       </div>

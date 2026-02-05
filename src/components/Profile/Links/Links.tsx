@@ -33,19 +33,19 @@ const profileLinks = [
 
 const Links = () => {
   return (
-    <div className="flex animate-fade-in flex-wrap items-center gap-4 animation-delay-3 mt-2">
+    <div className="flex animate-fade-in flex-wrap items-center gap-3 sm:gap-4 animation-delay-3 mt-4">
       {profileLinks.map((link, idx) => (
         <a
           key={idx}
-          className={link.className}
+          className={`${link.className} px-3 py-2 rounded-lg transition-all duration-200 hover:bg-zinc-50 hover:shadow-sm flex items-center gap-2`}
           href={link.href}
           aria-label={link.name}
           title={link.name}
           rel={link.rel}
           target={link.target}
         >
-          {link.icon}
-          <span className="hidden sm:inline">{link.name}</span>
+          <span className="text-lg">{link.icon}</span>
+          <span className="hidden sm:inline font-medium">{link.name}</span>
         </a>
       ))}
     </div>

@@ -1,5 +1,5 @@
 import { IconType } from "react-icons";
-import { FaCss3, FaReact, FaTheaterMasks } from "react-icons/fa";
+import { FaCss3, FaPhp, FaReact, FaTheaterMasks } from "react-icons/fa";
 import { GrGatsbyjs } from "react-icons/gr";
 import { RiHtml5Line, RiJavascriptLine, RiNextjsLine } from "react-icons/ri";
 import {
@@ -10,6 +10,7 @@ import {
   SiNodedotjs,
   SiReactquery,
   SiRedux,
+  SiStrapi,
   SiSwr,
   SiWebpack,
 } from "react-icons/si";
@@ -23,7 +24,13 @@ interface TechStack {
 
 export type TechStackList = TechStack[];
 
-export const technicalStackList: TechStackList = [
+export interface TechStackCategory {
+  title: string;
+  items: TechStackList;
+}
+
+// Languages
+export const languages: TechStackList = [
   {
     name: "JavaScript",
     icon: RiJavascriptLine,
@@ -35,9 +42,9 @@ export const technicalStackList: TechStackList = [
     color: "#3178C6",
   },
   {
-    name: "React",
-    icon: FaReact,
-    color: "#61DAFB",
+    name: "PHP",
+    icon: FaPhp,
+    color: "#777BB4",
   },
   {
     name: "HTML",
@@ -45,7 +52,35 @@ export const technicalStackList: TechStackList = [
     color: "#E44D26",
   },
   {
-    name: "Next JS",
+    name: "CSS",
+    icon: FaCss3,
+    color: "#1572B6",
+  },
+];
+
+export const frameworksAndLibraries: TechStackList = [
+  {
+    name: "Node.js",
+    icon: SiNodedotjs,
+    color: "#339933",
+  },
+  {
+    name: "Express",
+    icon: SiExpress,
+    color: "#000000",
+  },
+  {
+    name: "NestJS",
+    icon: SiNestjs,
+    color: "#E0234E",
+  },
+  {
+    name: "React",
+    icon: FaReact,
+    color: "#61DAFB",
+  },
+  {
+    name: "Next.js",
     icon: RiNextjsLine,
     color: "#000000",
   },
@@ -54,15 +89,19 @@ export const technicalStackList: TechStackList = [
     icon: GrGatsbyjs,
     color: "#663399",
   },
+];
+
+// Other Tools
+export const otherTools: TechStackList = [
   {
-    name: "Tailwind",
-    icon: TbBrandTailwind,
-    color: "#38B2AC",
+    name: "Strapi",
+    icon: SiStrapi,
+    color: "#4945FF",
   },
   {
-    name: "CSS",
-    icon: FaCss3,
-    color: "#1572B6",
+    name: "Tailwind CSS",
+    icon: TbBrandTailwind,
+    color: "#38B2AC",
   },
   {
     name: "Redux",
@@ -80,6 +119,16 @@ export const technicalStackList: TechStackList = [
     color: "#000000",
   },
   {
+    name: "MongoDB",
+    icon: SiMongodb,
+    color: "#47A248",
+  },
+  {
+    name: "Webpack",
+    icon: SiWebpack,
+    color: "#8DD6F9",
+  },
+  {
     name: "Playwright",
     icon: FaTheaterMasks,
     color: "#2F9331",
@@ -89,29 +138,19 @@ export const technicalStackList: TechStackList = [
     icon: SiJest,
     color: "#C21325",
   },
+];
+
+export const techStackCategories: TechStackCategory[] = [
   {
-    name: "Webpack",
-    icon: SiWebpack,
-    color: "#8DD6F9",
+    title: "Languages",
+    items: languages,
   },
   {
-    name: "Node.js",
-    icon: SiNodedotjs,
-    color: "#339933",
+    title: "Frameworks & Libraries",
+    items: frameworksAndLibraries,
   },
   {
-    name: "Express",
-    icon: SiExpress,
-    color: "#000000",
-  },
-  {
-    name: "NestJs",
-    icon: SiNestjs,
-    color: "#E0234E",
-  },
-  {
-    name: "MongoDB",
-    icon: SiMongodb,
-    color: "#47A248",
+    title: "Other Tools",
+    items: otherTools,
   },
 ];
