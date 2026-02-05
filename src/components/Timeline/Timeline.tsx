@@ -9,11 +9,18 @@ interface TimelineItem {
 
 const timelineData: TimelineItem[] = [
   {
-    year: "May 2022 - Present",
+    year: "Sep 2025 - Present",
+    title: "Full Stack Engineer",
+    subtitle: "Teamleader",
+    description:
+      "Expanded into full stack development, working on both frontend and backend features for the Teamleader Focus product. Building and maintaining APIs, services, and databases in a PHP microservices architecture alongside frontend development. Main technologies used are React, Redux, TypeScript, and PHP.",
+  },
+  {
+    year: "May 2022 - Aug 2025",
     title: "Frontend Engineer",
     subtitle: "Teamleader",
     description:
-      "Developing new features for the Teamleader Focus product, enhancing user functionality and experience. Main technologies used are React, Redux, and TypeScript.",
+      "Developed new features for the Teamleader Focus product, enhancing user functionality and experience. Main technologies used are React, Redux, and TypeScript.",
   },
   {
     year: "Aug 2020 - Apr 2022",
@@ -26,26 +33,28 @@ const timelineData: TimelineItem[] = [
 
 const Timeline: React.FC = () => {
   return (
-    <div className="text-zinc-600 border-l-2 border-tags max-w-4xl mx-auto pt-10">
-      <div className="relative pl-16">
+    <div className="max-w-4xl">
+      <div className="space-y-8">
         {timelineData.map((item, index) => (
-          <div key={index} className="mb-10">
-            {/* Diamond Shape */}
-            <div className="absolute -left-[27px] w-5 h-5 bg-white z-10 box-content p-4">
-              <div className="w-full h-full bg-tags hover:bg-black hover:cursor-pointer rotate-45"></div>
-            </div>
+          <div
+            key={index}
+            className="relative pl-8 border-l-2 border-zinc-200 pb-8 last:pb-0"
+            role="article"
+            aria-label={`${item.title} at ${item.subtitle}`}
+          >
+            {/* Circle Marker */}
+            <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-zinc-800 ring-4 ring-white"></div>
 
-            {/* Year Box */}
-            <div className="pt-3">
-              <div className="bg-tags hover:bg-black hover:cursor-pointer text-white px-3 py-1 text-sm font-semibold inline-block mb-2 rounded">
+            {/* Content */}
+            <div>
+              <div className="text-zinc-600 text-sm font-medium mb-2">
                 {item.year}
               </div>
 
-              {/* Content */}
-              <div className="mt-2">
-                <h3 className="text-xl font-semibold">{item.title}</h3>
-                <h4 className="text-gray-500">{item.subtitle}</h4>
-                <p className="mt-2 text-gray-700">{item.description}</p>
+              <div>
+                <h3 className="text-xl font-bold text-zinc-900 mb-1">{item.title}</h3>
+                <h4 className="text-base text-zinc-600 font-medium mb-3">{item.subtitle}</h4>
+                <p className="text-base leading-relaxed text-zinc-700">{item.description}</p>
               </div>
             </div>
           </div>

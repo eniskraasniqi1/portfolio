@@ -8,14 +8,14 @@ interface PageTransitionProps {
 const PageTransition = ({ children }: PageTransitionProps) => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 15 }}
       animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -20 }}
+      exit={{ opacity: 0, y: -15 }}
       transition={{
         type: "spring",
-        stiffness: 100,
+        stiffness: 120,
         damping: 20,
-        duration: 0.3
+        duration: 0.4
       }}
     >
       {children}
