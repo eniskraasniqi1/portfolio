@@ -19,17 +19,15 @@ const Home = () => {
 
       <section className="prose prose-lg max-w-none" aria-label="About me">
         <p className="text-lg leading-relaxed text-zinc-700 mb-6">
-          A {age}-year-old Software Engineer based in Pristina, Kosovo, passionate
+          A {age}-year-old Full Stack Engineer based in Pristina, Kosovo, passionate
           about learning and delivering next-generation user products and
           interfaces.
         </p>
 
         <p className="text-lg leading-relaxed text-zinc-700 mb-6">
-          I have over 4 years of front-end experience mainly specialized in
-          React and Next.js. While my specialty lies in the front-end realm, I
-          also have experience building full-stack applications using Node.js
-          frameworks like Express and NestJS for the backend, along with
-          MongoDB.
+          I have over 5 years of front-end experience mainly specialized in
+          React and Next.js. Since September 2025, I've expanded into full stack
+          development, working extensively with PHP and maintaining many microservices.
         </p>
 
         <p className="text-lg leading-relaxed text-zinc-700">

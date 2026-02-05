@@ -9,11 +9,18 @@ interface TimelineItem {
 
 const timelineData: TimelineItem[] = [
   {
-    year: "May 2022 - Present",
+    year: "Sep 2025 - Present",
+    title: "Full Stack Engineer",
+    subtitle: "Teamleader",
+    description:
+      "Expanded into full stack development, working on both frontend and backend features for the Teamleader Focus product. Building and maintaining APIs, services, and databases in a PHP microservices architecture alongside frontend development. Main technologies used are React, Redux, TypeScript, and PHP.",
+  },
+  {
+    year: "May 2022 - Aug 2025",
     title: "Frontend Engineer",
     subtitle: "Teamleader",
     description:
-      "Developing new features for the Teamleader Focus product, enhancing user functionality and experience. Main technologies used are React, Redux, and TypeScript.",
+      "Developed new features for the Teamleader Focus product, enhancing user functionality and experience. Main technologies used are React, Redux, and TypeScript.",
   },
   {
     year: "Aug 2020 - Apr 2022",
