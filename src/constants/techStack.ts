@@ -3,11 +3,13 @@ import { FaCss3, FaPhp, FaReact, FaTheaterMasks } from "react-icons/fa";
 import { GrGatsbyjs } from "react-icons/gr";
 import { RiHtml5Line, RiJavascriptLine, RiNextjsLine } from "react-icons/ri";
 import {
+  SiAnthropic,
   SiExpress,
   SiJest,
   SiMongodb,
   SiNestjs,
   SiNodedotjs,
+  SiOpenai,
   SiReactquery,
   SiRedux,
   SiStrapi,
@@ -140,6 +142,19 @@ export const otherTools: TechStackList = [
   },
 ];
 
+export const aiAndTooling: TechStackList = [
+  {
+    name: "OpenAI API",
+    icon: SiOpenai,
+    color: "#000000",
+  },
+  {
+    name: "Anthropic API",
+    icon: SiAnthropic,
+    color: "#D4A27F",
+  },
+];
+
 export const techStackCategories: TechStackCategory[] = [
   {
     title: "Languages",
@@ -148,6 +163,10 @@ export const techStackCategories: TechStackCategory[] = [
   {
     title: "Frameworks & Libraries",
     items: frameworksAndLibraries,
+  },
+  {
+    title: "AI & Tooling",
+    items: aiAndTooling,
   },
   {
     title: "Other Tools",
