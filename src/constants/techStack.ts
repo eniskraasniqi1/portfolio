@@ -1,3 +1,4 @@
+import { createElement } from "react";
 import { IconType } from "react-icons";
 import { FaCss3, FaPhp, FaReact, FaTheaterMasks } from "react-icons/fa";
 import { GrGatsbyjs } from "react-icons/gr";
@@ -6,6 +7,7 @@ import {
   SiAnthropic,
   SiExpress,
   SiJest,
+  SiLaravel,
   SiMongodb,
   SiNestjs,
   SiNodedotjs,
@@ -17,6 +19,23 @@ import {
   SiWebpack,
 } from "react-icons/si";
 import { TbBrandTailwind, TbBrandTypescript } from "react-icons/tb";
+
+// OpenRouter has no react-icons entry; small custom wormhole/portal mark.
+const SiOpenrouter: IconType = (props) =>
+  createElement(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      viewBox: "0 0 24 24",
+      width: props.size ?? "1em",
+      height: props.size ?? "1em",
+      fill: props.color ?? "currentColor",
+      "aria-hidden": props["aria-hidden"],
+    },
+    createElement("path", {
+      d: "M2 12a10 10 0 0 1 20 0 10 10 0 0 1-20 0Zm2.05 0a8 8 0 0 0 15.9 0 8 8 0 0 0-15.9 0Zm3.95 0a4 4 0 0 1 8 0 4 4 0 0 1-8 0Z",
+    })
+  );
 
 interface TechStack {
   name: string;
@@ -75,6 +94,11 @@ export const frameworksAndLibraries: TechStackList = [
     name: "NestJS",
     icon: SiNestjs,
     color: "#E0234E",
+  },
+  {
+    name: "Laravel",
+    icon: SiLaravel,
+    color: "#FF2D20",
   },
   {
     name: "React",
@@ -152,6 +176,11 @@ export const aiAndTooling: TechStackList = [
     name: "Anthropic API",
     icon: SiAnthropic,
     color: "#D4A27F",
+  },
+  {
+    name: "OpenRouter",
+    icon: SiOpenrouter,
+    color: "#6467F2",
   },
 ];
 
