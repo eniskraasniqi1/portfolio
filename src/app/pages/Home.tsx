@@ -1,3 +1,4 @@
+import { SiLinkedin } from "react-icons/si";
 import Links from "../../components/Profile/Links";
 import Timeline from "../../components/Timeline";
 import { getAge } from "../../utils/calculateAge";
@@ -8,38 +9,68 @@ const Home = () => {
   return (
     <article className="mt-8 lg:mt-16 pb-8">
       <header className="mb-8">
-        <h1 className="font-display text-4xl font-bold tracking-tight text-zinc-900 lg:text-5xl mb-4">
+        <h1 className="font-display text-4xl font-bold tracking-tight text-zinc-900 lg:text-5xl mb-3">
           Hi, I'm Enis Krasniqi!
         </h1>
 
+        <p className="text-lg lg:text-xl text-zinc-600 max-w-2xl mb-6">
+          Full Stack Engineer building AI agents and LLM tooling for B2B SaaS.
+        </p>
+
         <Links />
+
+        <div className="mt-6">
+          <a
+            href="https://www.linkedin.com/in/enis-krasniqi-4aaa691a7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-lg bg-zinc-900 px-5 py-2.5 text-sm font-medium text-white shadow-sm transition-all duration-200 hover:bg-zinc-700 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-zinc-900 focus:ring-offset-2"
+            aria-label="Get in touch on LinkedIn"
+          >
+            <SiLinkedin aria-hidden="true" />
+            <span>Get in touch</span>
+          </a>
+        </div>
       </header>
 
       <div className="my-8 border-t border-zinc-200"></div>
 
-      <section className="prose prose-lg max-w-none" aria-label="About me">
-        <p className="text-lg leading-relaxed text-zinc-700 mb-6">
-          A {age}-year-old Full Stack Engineer based in Pristina, Kosovo, passionate
-          about learning and delivering next-generation user products and
-          interfaces.
-        </p>
+      <section aria-labelledby="about-heading">
+        <h2
+          id="about-heading"
+          className="mb-4 text-2xl font-bold tracking-tight text-zinc-900"
+        >
+          About
+        </h2>
 
-        <p className="text-lg leading-relaxed text-zinc-700 mb-6">
-          I have over 5 years of front-end experience mainly specialized in
-          React and Next.js. Since September 2025, I've expanded into full stack
-          development, working extensively with PHP and maintaining many microservices.
-        </p>
+        <div className="prose prose-lg max-w-none">
+          <p className="text-lg leading-relaxed text-zinc-700 mb-6">
+            A {age}-year-old Full Stack Engineer based in Pristina, Kosovo. I
+            ship production web apps for B2B SaaS — currently working on AI
+            agents with tool-use capabilities, deepening into LLM-powered
+            product features alongside the rest of the stack.
+          </p>
 
-        <p className="text-lg leading-relaxed text-zinc-700">
-          In my spare time, I enjoy reading books, running, biking, and
-          watching movies.
-        </p>
+          <p className="text-lg leading-relaxed text-zinc-700 mb-6">
+            5+ years of front-end engineering specialized in React, TypeScript,
+            and Next.js. Since September 2025 I've gone full stack, working
+            extensively with PHP and a fleet of microservices, and integrating
+            LLMs (OpenAI, Anthropic) into real product surfaces.
+          </p>
+
+          <p className="text-lg leading-relaxed text-zinc-700">
+            Off-keyboard: reading, running, biking, and watching movies.
+          </p>
+        </div>
       </section>
 
       <div className="my-12 border-t border-zinc-200"></div>
 
       <section aria-labelledby="experience-heading">
-        <h2 id="experience-heading" className="mb-8 text-3xl font-bold tracking-tight text-zinc-900">
+        <h2
+          id="experience-heading"
+          className="mb-8 text-2xl font-bold tracking-tight text-zinc-900"
+        >
           Experience
         </h2>
 
