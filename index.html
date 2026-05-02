@@ -45,6 +45,30 @@
     <meta name="twitter:image" content="https://eniskrasniqi.vercel.app/static/apple-touch-icon.png" />
     <meta name="twitter:image:alt" content="Enis Krasniqi avatar" />
 
+    <!-- Pre-paint theme: applies .dark before React mounts to prevent FOUC -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var prefersDark =
+            window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches;
+          var resolved =
+            stored === "dark" || stored === "light"
+              ? stored
+              : prefersDark
+              ? "dark"
+              : "light";
+          if (resolved === "dark") {
+            document.documentElement.classList.add("dark");
+          }
+          document.documentElement.style.colorScheme = resolved;
+        } catch (e) {
+          /* ignore — fall back to default light theme */
+        }
+      })();
+    </script>
+
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png" />
