@@ -32,6 +32,9 @@ export default tseslint.config(
         'warn',
         { allowConstantExport: true },
       ],
+      // TypeScript handles prop validation; the JS-era rule fires false
+      // positives on typed components like the IconType one in techStack.ts.
+      'react/prop-types': 'off',
     },
   },
 )

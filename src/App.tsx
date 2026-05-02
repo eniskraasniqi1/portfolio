@@ -3,6 +3,7 @@ import { BrowserRouter } from "react-router";
 
 import AppRoutes from "./app/Routes";
 import Layout from "./components/Layout/Layout";
+import { ThemeProvider } from "./components/ThemeProvider";
 
 import "./index.css";
 
@@ -13,9 +14,11 @@ if (!root) {
 }
 
 ReactDOM.createRoot(root).render(
-  <BrowserRouter>
-    <Layout>
-      <AppRoutes />
-    </Layout>
-  </BrowserRouter>
+  <ThemeProvider>
+    <BrowserRouter>
+      <Layout>
+        <AppRoutes />
+      </Layout>
+    </BrowserRouter>
+  </ThemeProvider>
 );

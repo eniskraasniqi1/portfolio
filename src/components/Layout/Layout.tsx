@@ -13,7 +13,7 @@ const Layout = ({ children }: LayoutProps) => {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="flex flex-col mx-auto min-h-screen w-full max-w-5xl px-6 sm:px-10 md:px-24 lg:px-32 bg-white/90 backdrop-blur-md ring-1 ring-zinc-100 shadow-xl"
+        className="flex flex-col mx-auto min-h-screen w-full max-w-5xl px-6 sm:px-10 md:px-24 lg:px-32 bg-white/90 backdrop-blur-md ring-1 ring-zinc-100 shadow-xl dark:bg-zinc-900/80 dark:ring-zinc-100/10 dark:shadow-black/30"
       >
         <Header />
         <main className="flex-1 pb-8">
@@ -22,7 +22,7 @@ const Layout = ({ children }: LayoutProps) => {
           </AnimatePresence>
         </main>
         <motion.footer
-          className="flex justify-center text-zinc-500 border-t border-zinc-100 mt-auto"
+          className="flex justify-center text-zinc-500 border-t border-zinc-100 mt-auto dark:text-zinc-500 dark:border-zinc-800"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.4 }}
@@ -30,7 +30,7 @@ const Layout = ({ children }: LayoutProps) => {
           <p className="py-6 text-sm">
             Coded with <span className="text-red-500">♥</span> by{" "}
             <motion.strong
-              className="text-zinc-700 cursor-pointer inline-block"
+              className="text-zinc-700 cursor-pointer inline-block dark:text-zinc-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
               transition={{ type: "spring", stiffness: 400 }}

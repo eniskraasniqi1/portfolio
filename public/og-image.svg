@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#171717"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fc5200"/>
+      <stop offset="100%" stop-color="#ff9d6e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#262626" stroke-width="1" opacity="0.4">
+    <line x1="0" y1="158" x2="1200" y2="158"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="472" x2="1200" y2="472"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+  </g>
+
+  <!-- Accent bar -->
+  <rect x="80" y="180" width="80" height="6" fill="url(#accent)" rx="3"/>
+
+  <!-- Name -->
+  <text x="80" y="270" font-family="ui-sans-serif, system-ui, -apple-system, 'Inter', sans-serif"
+        font-weight="700" font-size="92" fill="#fafafa" letter-spacing="-2">
+    Enis Krasniqi
+  </text>
+
+  <!-- Role -->
+  <text x="80" y="345" font-family="ui-sans-serif, system-ui, -apple-system, 'Inter', sans-serif"
+        font-weight="500" font-size="38" fill="#a3a3a3">
+    Full Stack Engineer · Building AI agents and LLM tooling
+  </text>
+
+  <!-- Tags -->
+  <g font-family="ui-monospace, SFMono-Regular, 'JetBrains Mono', monospace"
+     font-size="22" fill="#737373">
+    <text x="80" y="450">React</text>
+    <text x="200" y="450">·</text>
+    <text x="225" y="450">TypeScript</text>
+    <text x="395" y="450">·</text>
+    <text x="420" y="450">Node.js</text>
+    <text x="555" y="450">·</text>
+    <text x="580" y="450">PHP</text>
+    <text x="650" y="450">·</text>
+    <text x="675" y="450">LLMs</text>
+    <text x="765" y="450">·</text>
+    <text x="790" y="450">Tool use</text>
+    <text x="925" y="450">·</text>
+    <text x="950" y="450">RAG</text>
+  </g>
+
+  <!-- Footer URL -->
+  <text x="80" y="560" font-family="ui-monospace, SFMono-Regular, 'JetBrains Mono', monospace"
+        font-size="24" fill="#525252">
+    eniskrasniqi.vercel.app
+  </text>
+
+  <!-- Pristina pin -->
+  <text x="1120" y="560" text-anchor="end"
+        font-family="ui-sans-serif, system-ui, -apple-system, 'Inter', sans-serif"
+        font-size="22" fill="#525252">
+    Pristina, Kosovo
+  </text>
+</svg>
