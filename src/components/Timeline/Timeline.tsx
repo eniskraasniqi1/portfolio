@@ -13,7 +13,7 @@ const timelineData: TimelineItem[] = [
     title: "Full Stack Engineer",
     subtitle: "Teamleader",
     description:
-      "Building AI agents with LLM tool-use that integrate deeply with the Teamleader Focus product. Expanded full-stack: shipping features end-to-end across a PHP microservices backend and a React/TypeScript frontend, with hands-on work on prompt design, function-calling, and integrating OpenAI/Anthropic APIs into real product surfaces.",
+      "Expanded full-stack: shipping features end-to-end across a PHP microservices backend and a React/TypeScript frontend, with hands-on work on prompt design, function-calling, and integrating OpenAI/Anthropic APIs into real product surfaces.",
   },
   {
     year: "May 2022 - Aug 2025",

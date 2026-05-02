@@ -53,13 +53,13 @@ const Home = () => {
 
           <p className="text-lg leading-relaxed text-zinc-700 mb-6 dark:text-zinc-300">
             5+ years of front-end engineering specialized in React, TypeScript,
-            and Next.js. Since September 2025 I&apos;ve gone full stack, working
-            extensively with PHP and a fleet of microservices, and integrating
-            LLMs (OpenAI, Anthropic) into real product surfaces.
+            and Next.js. Since September 2025, I&apos;ve expanded into full
+            stack development, working extensively with PHP and maintaining
+            many microservices.
           </p>
 
           <p className="text-lg leading-relaxed text-zinc-700 dark:text-zinc-300">
-            Off-keyboard: reading, running, biking, and watching movies.
+            In my spare time, I enjoy reading books, running, biking, and watching movies.
           </p>
         </div>
       </section>
