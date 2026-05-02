@@ -13,21 +13,21 @@ const timelineData: TimelineItem[] = [
     title: "Full Stack Engineer",
     subtitle: "Teamleader",
     description:
-      "Expanded into full stack development, working on both frontend and backend features for the Teamleader Focus product. Building and maintaining APIs, services, and databases in a PHP microservices architecture alongside frontend development. Main technologies used are React, Redux, TypeScript, and PHP.",
+      "Building AI agents with LLM tool-use that integrate deeply with the Teamleader Focus product. Expanded full-stack: shipping features end-to-end across a PHP microservices backend and a React/TypeScript frontend, with hands-on work on prompt design, function-calling, and integrating OpenAI/Anthropic APIs into real product surfaces.",
   },
   {
     year: "May 2022 - Aug 2025",
     title: "Frontend Engineer",
     subtitle: "Teamleader",
     description:
-      "Developed new features for the Teamleader Focus product, enhancing user functionality and experience. Main technologies used are React, Redux, and TypeScript.",
+      "Shipped customer-facing features for Teamleader Focus across forms, lists, and workflow surfaces. Worked daily in a large React + Redux + TypeScript codebase, contributing to performance, accessibility, and developer-experience improvements.",
   },
   {
     year: "Aug 2020 - Apr 2022",
     title: "Full-Stack Developer",
     subtitle: "StarLabs",
     description:
-      "Helped delivering a product named Gildform, an ERP system management tool seamlessly integrated with Shopify. Additionally, contributed to building Gatsby themes, websites, and React widgets, implementing SEO best practices to enhance performance and user experience.",
+      "Helped deliver Gildform, an ERP tool integrated with Shopify. Built Gatsby themes, marketing sites, and embeddable React widgets, applying SEO best practices to lift Lighthouse scores and organic discoverability.",
   },
 ];
 
