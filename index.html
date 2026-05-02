@@ -146,7 +146,67 @@
     </script>
   </head>
   <body>
-    <div id="root"></div>
+    <!--
+      Static body fallback for non-JS crawlers (Bing, LinkedIn preview,
+      LLM training crawlers). Mirrors the core copy of the React app so
+      these crawlers index real content instead of an empty <div id="root">.
+      JS-capable clients (browsers, Googlebot) render the React app and
+      never see this. Keep in rough sync with src/app/pages/Home.tsx.
+    -->
+    <div id="root">
+      <noscript>
+        <main>
+          <header>
+            <h1>Hi, I'm Enis Krasniqi!</h1>
+            <p>Full Stack Engineer building AI agents and LLM tooling for B2B SaaS.</p>
+            <p>
+              <a href="https://www.linkedin.com/in/enis-krasniqi-4aaa691a7" rel="noopener noreferrer">LinkedIn</a>
+              ·
+              <a href="https://github.com/eniskraasniqi1" rel="noopener noreferrer">GitHub</a>
+            </p>
+          </header>
+
+          <section>
+            <h2>About</h2>
+            <p>
+              Full Stack Engineer based in Pristina, Kosovo. I ship production web apps for B2B SaaS — currently working on AI agents with tool-use capabilities, deepening into LLM-powered product features alongside the rest of the stack.
+            </p>
+            <p>
+              5+ years of front-end engineering specialized in React, TypeScript, and Next.js. Since September 2025 I've gone full stack, working extensively with PHP and a fleet of microservices, and integrating LLMs (OpenAI, Anthropic) into real product surfaces.
+            </p>
+          </section>
+
+          <section>
+            <h2>Experience</h2>
+            <article>
+              <h3>Full Stack Engineer · Teamleader</h3>
+              <p><em>Sep 2025 – Present</em></p>
+              <p>Building AI agents with LLM tool-use, prompt design, function-calling, and OpenAI/Anthropic integration on a PHP microservices + React/TypeScript stack.</p>
+            </article>
+            <article>
+              <h3>Frontend Engineer · Teamleader</h3>
+              <p><em>May 2022 – Aug 2025</em></p>
+              <p>Shipped customer-facing features for Teamleader Focus across forms, lists, and workflow surfaces in React + Redux + TypeScript.</p>
+            </article>
+            <article>
+              <h3>Full-Stack Developer · StarLabs</h3>
+              <p><em>Aug 2020 – Apr 2022</em></p>
+              <p>Built Gildform (Shopify-integrated ERP), Gatsby themes, marketing sites, and embeddable React widgets with SEO best practices.</p>
+            </article>
+          </section>
+
+          <section>
+            <h2>Stack</h2>
+            <p>
+              Languages: JavaScript, TypeScript, PHP, HTML, CSS.
+              Frameworks: React, Next.js, Node.js, Express, NestJS, Gatsby.
+              AI &amp; tooling: OpenAI API, Anthropic API.
+              Other: Redux, React Query, SWR, Tailwind CSS, MongoDB, Strapi, Webpack, Jest, Playwright.
+            </p>
+          </section>
+        </main>
+      </noscript>
+    </div>
     <script type="module" src="/src/App.tsx"></script>
   </body>
 </html>
