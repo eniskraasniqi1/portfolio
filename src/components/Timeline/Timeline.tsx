@@ -38,23 +38,23 @@ const Timeline: React.FC = () => {
         {timelineData.map((item, index) => (
           <div
             key={index}
-            className="relative pl-8 border-l-2 border-zinc-200 pb-8 last:pb-0"
+            className="relative pl-8 border-l-2 border-zinc-200 pb-8 last:pb-0 dark:border-zinc-800"
             role="article"
             aria-label={`${item.title} at ${item.subtitle}`}
           >
             {/* Circle Marker */}
-            <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-zinc-800 ring-4 ring-white"></div>
+            <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-zinc-800 ring-4 ring-white dark:bg-zinc-100 dark:ring-zinc-900"></div>
 
             {/* Content */}
             <div>
-              <div className="text-zinc-600 text-sm font-medium mb-2">
+              <div className="text-zinc-600 text-sm font-medium mb-2 dark:text-zinc-500">
                 {item.year}
               </div>
 
               <div>
-                <h3 className="text-xl font-bold text-zinc-900 mb-1">{item.title}</h3>
-                <h4 className="text-base text-zinc-600 font-medium mb-3">{item.subtitle}</h4>
-                <p className="text-base leading-relaxed text-zinc-700">{item.description}</p>
+                <h3 className="text-xl font-bold text-zinc-900 mb-1 dark:text-zinc-50">{item.title}</h3>
+                <h4 className="text-base text-zinc-600 font-medium mb-3 dark:text-zinc-400">{item.subtitle}</h4>
+                <p className="text-base leading-relaxed text-zinc-700 dark:text-zinc-300">{item.description}</p>
               </div>
             </div>
           </div>

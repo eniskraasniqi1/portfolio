@@ -10,7 +10,7 @@ const TechStack = ({ list }: { list: TechStackList }) => {
           return (
             <div
               key={tech.name}
-              className="flex flex-col items-center justify-center bg-white text-zinc-800 ring-1 shadow-md hover:shadow-lg shadow-zinc-800/5 ring-zinc-200 gap-2 h-28 rounded-xl p-4 transition-all duration-300 ease-out group cursor-pointer hover:scale-105"
+              className="flex flex-col items-center justify-center bg-white text-zinc-800 ring-1 shadow-md hover:shadow-lg shadow-zinc-800/5 ring-zinc-200 gap-2 h-28 rounded-xl p-4 transition-all duration-300 ease-out group cursor-pointer hover:scale-105 dark:bg-zinc-900 dark:text-zinc-200 dark:ring-zinc-100/10 dark:shadow-black/30"
               role="article"
               aria-label={`${tech.name} technology`}
             >

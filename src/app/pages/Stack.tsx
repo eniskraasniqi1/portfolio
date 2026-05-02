@@ -5,15 +5,15 @@ const Stack = () => {
   return (
     <article className="mt-8 lg:mt-16 pb-8">
       <header className="mb-8">
-        <h1 className="font-display text-4xl font-bold tracking-tight text-zinc-900 lg:text-5xl mb-3">
+        <h1 className="font-display text-4xl font-bold tracking-tight text-zinc-900 lg:text-5xl mb-3 dark:text-zinc-50">
           Tech Stack
         </h1>
-        <p className="text-lg text-zinc-600 max-w-2xl">
+        <p className="text-lg text-zinc-600 max-w-2xl dark:text-zinc-400">
           Technologies and tools I use to build modern web applications
         </p>
       </header>
 
-      <div className="my-8 border-t border-zinc-200"></div>
+      <div className="my-8 border-t border-zinc-200 dark:border-zinc-800"></div>
 
       {techStackCategories.map((category, index) => (
         <section
@@ -24,7 +24,7 @@ const Stack = () => {
           <div className="mb-6">
             <h2
               id={`category-${index}`}
-              className="text-2xl font-bold text-zinc-900 mb-2"
+              className="text-2xl font-bold text-zinc-900 mb-2 dark:text-zinc-50"
             >
               {category.title}
             </h2>
