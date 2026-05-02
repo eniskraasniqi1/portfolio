@@ -10,7 +10,7 @@ const Home = () => {
     <article className="mt-8 lg:mt-16 pb-8">
       <header className="mb-8">
         <h1 className="font-display text-4xl font-bold tracking-tight text-zinc-900 lg:text-5xl mb-3 dark:text-zinc-50">
-          Hi, I'm Enis Krasniqi!
+          Hi, I&apos;m Enis Krasniqi!
         </h1>
 
         <p className="text-lg lg:text-xl text-zinc-600 max-w-2xl mb-6 dark:text-zinc-400">
@@ -53,7 +53,7 @@ const Home = () => {
 
           <p className="text-lg leading-relaxed text-zinc-700 mb-6 dark:text-zinc-300">
             5+ years of front-end engineering specialized in React, TypeScript,
-            and Next.js. Since September 2025 I've gone full stack, working
+            and Next.js. Since September 2025 I&apos;ve gone full stack, working
             extensively with PHP and a fleet of microservices, and integrating
             LLMs (OpenAI, Anthropic) into real product surfaces.
           </p>
